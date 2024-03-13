@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:taskati_3_4/features/home/presentation/widgets/home_header.dart';
 
+import 'addtask.dart';
+
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
 
@@ -11,14 +13,24 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Scaffold(
         body: Padding(
-          padding: EdgeInsets.all(15),
+          padding: const EdgeInsets.all(15),
           child: Column(
             children: [
               // Header
-              HomeHeader(),
+              const HomeHeader(),
+              FloatingActionButton.large(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Add_task()),
+                  );
+                },
+                child: const Text('Add Task'),
+              )
             ],
           ),
         ),
