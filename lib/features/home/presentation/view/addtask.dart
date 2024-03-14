@@ -60,20 +60,41 @@ class _Add_taskState extends State<Add_task> {
                 hinttext: '14/3/2024',
               ),
               Gap(10),
+              Padding(
+                padding: EdgeInsets.only(left: 10),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Start Time',
+                      style: TextStyle(fontSize: 15),
+                    ),
+                    Gap(100),
+                    Text(
+                      'End Time',
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ],
+                ),
+              ),
+              Gap(10),
               Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  textform(
-                    hinttext: 'hinttext',
-                    icon: Icons.timer,
-                  ),
                   Gap(10),
-                  textform(
-                    hinttext: 'hinttext',
-                    icon: Icons.timer,
-                  ),
+                  Flexible(
+                      child: textform(
+                    hinttext: '02:00 AM',
+                    icon: Icons.update,
+                  )),
+                  Gap(10),
+                  Flexible(
+                      child: textform(
+                    hinttext: '02:00 AM',
+                    icon: Icons.update,
+                  )),
                 ],
               ),
-
             ],
           ),
         ),
