@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:gap/gap.dart';
 
 import '../widgets/textformfield.dart';
 
+// ignore: camel_case_types
 class Add_task extends StatefulWidget {
   const Add_task({super.key});
 
@@ -12,6 +11,7 @@ class Add_task extends StatefulWidget {
   State<Add_task> createState() => _Add_taskState();
 }
 
+// ignore: camel_case_types
 class _Add_taskState extends State<Add_task> {
   @override
   Widget build(BuildContext context) {
