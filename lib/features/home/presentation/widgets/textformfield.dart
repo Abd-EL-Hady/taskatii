@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class textform extends StatelessWidget {
   const textform({
     super.key,
