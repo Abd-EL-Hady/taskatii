@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -157,7 +156,7 @@ class _ProfileViewState extends State<ProfileView> {
                           showModalBottomSheet(
                               context: context,
                               builder: (BuildContext context) {
-                                return Column();
+                                return const Column();
                               });
                         },
                         child: CircleAvatar(
